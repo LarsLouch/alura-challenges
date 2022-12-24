@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Decodificador de Texto</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <a href="https://github.com/LarsLouch"><img src="menu.jfif" alt="Logo do menu" class="menu"></a>
+            <img src="def.png" alt="Logo da Alura" class="logo">
+            <div class="contato">
+                <a href="https://github.com/LarsLouch"><img src="github.png" alt="Logo do GitHub" class="github"></a>
+                <a href="https://www.linkedin.com/in/joao-lazaro/"><img src="linkedin.png" alt="Logo do LinkedIn" class="linkedin"></a>
+                <a href="https://www.facebook.com/joao.lazaro.1044/"><img src="facebook.png" alt="Logo do facebook" class="github"></a>
+                <a href="https://www.youtube.com/channel/UCsvTBYkbRpQKGlmcmvGgN2g"><img src="youtube.png" alt="Logo do GitHub" class="github"></a>
+                <a href="https://www.instagram.com/joao_lazarok/"><img src="instagram.png" alt="Logo do instagram" class="github"></a>
+                <a href="https://twitter.com/LarsLouch"><img src="twitter.png" alt="Logo do twitter" class="github"></a>
+            </div>
+        </header>
+        <main>
+            <div class="criptografia">
+                <p id="aviso"><img src=exclamacao.png alt="Ponto de exclamação">Apenas letras minúsculas e sem acento!</p>
+                <textarea wrap="hard" id="input" placeholder="Digite seu texto..." class="texto"></textarea>
+                <div class="btn-criptografia">
+                    <button id="codificador" class="btn">Codificar</button>
+                    <button id="decodificador" class="btn">Decodificar</button>
+                </div>
+            </div>
+            <div class="resultado">
+                <textarea wrap="hard" id="output" readonly placeholder="O texto codificado ou decodificado aparecerá aqui!" class="texto-resultado"></textarea>
+                <button id="copiar" class="btn">Copiar</button>
+                <button class="btn" id="limpar">Limpar campos</button>
+            </div>
+        </main>
+        <footer>
+            <p>Desenvolvido por João Lázaro Brito Dias &copy 2022</p>
+            <p>Challenge Programa ONE e Alura</p>
+        </footer>
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>

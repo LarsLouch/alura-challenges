@@ -1,0 +1,207 @@
+* {
+    font-family: 'Lucidatypewriter', sans-serif;
+}
+
+body {
+    background: #E5E5E5;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10vw 10vh 5vw;
+}
+
+.logo, .contato {
+    margin: 20px 0 0 0;
+    height: 50px;
+
+}
+
+.linkedin{
+    width: 50px;
+    height: 50px;
+}
+
+.github {
+    width: 50px;
+    height: 50px;
+
+}
+
+.menu {
+    width: 50px;
+    height: 50px;
+    margin: 20px 0 0 0;
+
+}
+
+main {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+#aviso {
+    display: flex;
+    gap: 22px;
+    justify-content: flex-start;
+    color: darkred;
+}
+
+.criptografia {
+    display: inline-flex;
+    flex-wrap: wrap;
+    font-size: 10px;
+    background: url(fundo1.jfif);
+    color: white;
+    padding: 6px;
+    border-radius: 4px;
+    gap: 50px;
+    width:45%;
+    margin: 3 3 3 5vw;
+    
+}
+
+.texto, .texto-resultado {
+    display: inline-flex;
+    flex-wrap: wrap;
+    resize: none;
+    gap: 25px;
+    width: 40%;
+    margin: 2 2 2 2vw;
+    
+}
+
+.texto::placeholder {
+    color: darkred;
+}
+
+.texto {
+    background: floralwhite;
+    border-style: dashed;
+    border-color: rgb(13, 0, 24);
+    width: 80%;
+    height: 70vh;
+}
+
+
+.btn-criptografia {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 8vh;
+    gap: 5vw;
+}
+
+.btn {
+    width: 210px;
+    height: 70px;
+    font-size: 24px;
+    padding: 8px;
+    border-radius: 25px;
+    color: darkred;
+    font-weight: bold;
+    background: #E5E5E5;
+    border: 6px solid darkred;
+    transition: 0.5s;
+}
+
+.btn:hover {
+    width: 210px;
+    height: 70px;
+    font-size: 26px;
+    padding: 7px;
+    border-radius: 30px;
+    color: antiquewhite;
+    font-weight: bold;
+    background: darkred;
+    border-color: darkred;
+    cursor: pointer;
+}
+
+.resultado {
+    display: inline-flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 35%;
+}
+
+.texto-resultado::placeholder {
+    height: 90vh;
+    background: url(circulo.jfif);
+    background-repeat: no-repeat;
+    background-position: center;
+    color: darkred;
+    text-align: center;
+}
+
+.texto-resultado {
+    background: floralwhite;
+    border-color: darkred;
+    width: 70%;
+    height: 90vh;
+    box-shadow: 0 24px 32px 8px rgba(31, 28, 75, 0.2);
+}
+
+#copiar {
+    position: relative;
+    bottom: 12vh;
+}
+
+footer {
+    margin: 30px 0;
+}
+
+footer p {
+    color: darkred;
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 14px;
+}
+
+@media screen and (max-width: 950px) {
+    body {
+        width: auto;
+    }
+
+    main {
+        display: block;
+    }
+
+    #aviso {
+        align-items: center;
+        margin-left: 12vw;
+    }
+
+    .criptografia, .resultado {
+        width: 80%;
+        margin: 3 3 3 3;
+    }
+
+
+    .btn, .btn:hover {
+        width: 300px;
+    }
+
+    #limpar, #limpar:hover {
+        width: 240px;
+    }
+
+    .btn-criptografia {
+        margin-bottom: 5vh;
+    }
+    .texto, .texto-resultado {
+        width: 70%;
+        height: 50vh;
+    }
+    .texto-resultado::placeholder {
+        height: 60vh;
+        font-size: 20px;
+    }
+
+    #copiar {
+        bottom: 12vh;
+    }
+
+}
